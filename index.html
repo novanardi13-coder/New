@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Grid</title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .box1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            width: 90vw;
+            height: 5vh;
+            text-align: center;
+            color: white;
+            font-size: 10vw;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1px;
+            padding: 0px;
+        }
+        
+        summary::-webkit-details-marker {display: none;}
+        summary::marker {content: none;}
+        
+        .boxc {
+            text-align: center;
+            font-size: 7vw;
+            background-color: black;
+            color: white;
+            height: 5vh;
+        }
+        .box3 {
+            background-color: black;
+            align-items: center;
+            height: 17vh;
+            width: 30vw;
+            margin-left: -3px;
+        }
+        .ap {
+            background-color: black;
+            color: blue;
+            text-align: center;
+        }
+        .a {
+            width: 53vw;
+            margin-left: -3px;
+        }
+        .b {
+            width: 30vw;
+            height: 20vh;
+        }
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns:2, 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="box1"><p>testing this web</p></div>
+        <details>
+            <summary class="boxc">&#9776;</summary>
+            <p class="ap"><a href="v.html">tes</a></p>
+            </details>
+        <div class="box3"><img style="width: 30vw;" src="logospendayu.png"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+    </div>
+
+</body>
+</html>
